@@ -1,0 +1,25 @@
+# =========================
+# Data (never commit data)
+# =========================
+data/raw/*
+data/processed/*
+
+# Allow README files
+!data/**/README.md
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
