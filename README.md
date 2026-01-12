@@ -8,13 +8,13 @@ The goal is to design an end-to-end forecasting pipeline that remains accurate, 
 
 🎯 Project Objectives
 
-  Build a robust multi-horizon forecasting framework for real-world demand data
+ -  Build a robust multi-horizon forecasting framework for real-world demand data
 
-  Handle hierarchical, sparse, and intermittent time series effectively
+ -  Handle hierarchical, sparse, and intermittent time series effectively
 
-  Detect concept drift and performance decay in deployed models
+ -  Detect concept drift and performance decay in deployed models
 
-  Design evaluation strategies aligned with business decisions, not just metrics
+ -  Design evaluation strategies aligned with business decisions, not just metrics
 
   Emphasize reasoning, trade-offs, and failure mode analysis
 
@@ -22,68 +22,68 @@ The goal is to design an end-to-end forecasting pipeline that remains accurate, 
 
   The project uses large-scale hierarchical retail demand data with the following properties:
 
-  Item → Store → State → Total hierarchy
+  - Item → Store → State → Total hierarchy
 
-  Strong weekly and yearly seasonality
+  - Strong weekly and yearly seasonality
 
-  Intermittent and zero-inflated demand patterns
+  - Intermittent and zero-inflated demand patterns
 
-  Calendar effects (holidays, events)
+  - Calendar effects (holidays, events)
 
-  Time-varying price information
+  - Time-varying price information
 
   These characteristics closely resemble real-world forecasting problems in retail, supply chain, and operations.
 
 🧠 Methodology & System Design
 1. Data Exploration & Problem Framing
 
-  Deep exploratory analysis of temporal patterns and demand behavior
+  - Deep exploratory analysis of temporal patterns and demand behavior
 
-  Granularity and aggregation trade-off analysis
+  - Granularity and aggregation trade-off analysis
 
-  Calendar and price feature diagnostics
+  - Calendar and price feature diagnostics
 
-  Trend, seasonality, and residual decomposition
+  - Trend, seasonality, and residual decomposition
 
-  Early identification of data leakage risks
+  - Early identification of data leakage risks
 
 2. Forecasting Approaches
 
-  Strong naive and statistical baselines for benchmarking
+  - Strong naive and statistical baselines for benchmarking
 
-  Machine learning–based forecasting models
+  - Machine learning–based forecasting models
 
-  Hybrid and ensemble strategies for improved stability
+  - Hybrid and ensemble strategies for improved stability
 
-  Direct and recursive multi-horizon forecasting methods
+  - Direct and recursive multi-horizon forecasting methods
 
 3. Evaluation Strategy
 
-  Multi-horizon error analysis
+  - Multi-horizon error analysis
 
-  Segment-level and hierarchy-aware evaluation
+  - Segment-level and hierarchy-aware evaluation
 
-  Risk-sensitive and business-aligned metrics
+  - Risk-sensitive and business-aligned metrics
 
-  Failure mode and residual diagnostics
+  - Failure mode and residual diagnostics
 
 4. Concept Drift Detection & Monitoring
 
-  Distribution shift detection in input features
+  - Distribution shift detection in input features
 
-  Forecast performance degradation tracking
+  - Forecast performance degradation tracking
 
-  Retraining triggers and monitoring logic
+  - Retraining triggers and monitoring logic
   
 🧪 Design Principles
 
-  Model-agnostic: focus on systems, not just algorithms
+ -  Model-agnostic: focus on systems, not just algorithms
 
-  Production-first: decisions reflect deployment constraints
+ -  Production-first: decisions reflect deployment constraints
 
-  Explainability over complexity
+ -  Explainability over complexity
 
-  Reproducible and well-documented notebooks
+ -  Reproducible and well-documented notebooks
 
 📂 Repository Structure (High-Level)
 ├── 01-data_exploration.ipynb
@@ -107,17 +107,18 @@ The goal is to design an end-to-end forecasting pipeline that remains accurate, 
 
   By the end of this project, the repository will demonstrate:
 
-  End-to-end thinking for time series forecasting systems
+  - End-to-end thinking for time series forecasting systems
   
-  Strong fundamentals in time series analysis and evaluation
+  - Strong fundamentals in time series analysis and evaluation
     
-  Practical handling of real-world data challenges
+  - Practical handling of real-world data challenges
 
-    A deployable and monitorable forecasting pipeline
+  - A deployable and monitorable forecasting pipeline
 
-👤 Author
+    
 
-  Shubham Jha
-  B.Tech CSE | Data Science & Machine Learning
-  (Open to Data Scientist / ML Engineer roles)
+👤 Author: 
+  **Shubham Jha**
+  - B.Tech CSE | Data Science & Machine Learning
+  - (Open to Data Scientist / ML Engineer roles)
 
